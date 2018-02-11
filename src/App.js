@@ -24,9 +24,13 @@ class App extends React.Component {
 
   render() {
     return (
-      <div className="App">
+      <div className="container">
+      <head>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous"/>
+        <link rel="stylesheet" href="https://afeld.github.io/emoji-css/emoji.css"/>
+      </head>
         <header className="App-header">          
-          <h1 className="App-title">Duck</h1>
+          <h1 className="App-title">Duck <i class="em em-duck"></i> </h1>
         </header>
         <p className="App-intro">        
         </p>
