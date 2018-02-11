@@ -9,7 +9,7 @@ const AddNew = ({ handleFormSubmit, newDateTime, newDescription, handleValueChan
           päivämäärä ja aika: 
           <input 
             id="newDateTime"
-            value={newName}
+            value={newDateTime}
             onChange={handleValueChange}
           />
         </div>
@@ -17,7 +17,7 @@ const AddNew = ({ handleFormSubmit, newDateTime, newDescription, handleValueChan
           kuvaus:
           <input
             id="newDescription"
-            value={newNumber}
+            value={newDescription}
             onChange={handleValueChange}
           />    
         </div>
