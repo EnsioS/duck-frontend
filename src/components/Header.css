@@ -1,0 +1,17 @@
+.nav {
+  background-color: rgb(255, 95, 24);
+  border-color: rgb(255, 95, 24);
+}
+
+.logo {
+  float: left;
+}
+
+.nav-header {
+  float: right;
+  color: white;
+  font-size: 1.7em;
+  margin-top: -0.15em;
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif
+}
+

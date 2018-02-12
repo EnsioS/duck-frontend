@@ -1,5 +1,6 @@
 import React from 'react'
-import { Table, Button } from 'react-bootstrap'
+import { Table, Button, Label } from 'react-bootstrap'
+import './Sightings.css'
 
 const Sightings = ({ sightings, order, changeOrder }) => {
   const anotherOrder = order === 'descending' ? 'ascending':'descending'
@@ -7,11 +8,15 @@ const Sightings = ({ sightings, order, changeOrder }) => {
   return (
     <div>  
       <h1>Sightings</h1>
-      Ordered {order} by date and time.
-      <Button bsStyle="primary" onClick={changeOrder}>
-        Order {anotherOrder}
-      </Button>  
-      <Table striped bordered>
+      <div>
+        <Label bsStyle='default col-sm-5' className="orderInfo">
+          Ordered {order} by date and time.
+        </Label>
+        <Button bsStyle='primary col-sm-2.5' bsSize='small' onClick={changeOrder}>
+          Order {anotherOrder}
+        </Button>  
+      </div>  
+      <Table striped bordered className='table'>
         <thead>
           <tr>
             <th>species</th>

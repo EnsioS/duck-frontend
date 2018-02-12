@@ -1,7 +1,7 @@
 import React from 'react'
 import sightingService from './services/sightings'
 import Sightings from './components/Sightings'
-
+import Header from './components/Header'
 
 class App extends React.Component {
   constructor(props) {
@@ -39,17 +39,15 @@ class App extends React.Component {
     }
 
     return (
-      <div className="container">
-        <header className="App-header">          
-          <h1 className="App-title">Duck <i className="em em-duck"></i> </h1>
-        </header>
-        <p className="App-intro">        
-        </p>
-        <Sightings 
-          sightings={orderedSightings}
-          order={this.state.order}
-          changeOrder={this.changeOrder}
-        />
+      <div>
+        <Header />
+        <div className='container'> 
+          <Sightings 
+            sightings={orderedSightings}
+            order={this.state.order}
+            changeOrder={this.changeOrder}
+          />
+        </div>
       </div>
     )
   }

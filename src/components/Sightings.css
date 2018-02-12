@@ -1,0 +1,12 @@
+.orderInfo {
+    height: 2.75em;
+    line-height: 2.5;
+}
+
+.table {
+    margin-top: 0.5em;
+}
+
+thead {
+    background-color: rgb(255, 95, 24);
+}
