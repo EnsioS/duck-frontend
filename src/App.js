@@ -16,6 +16,7 @@ class App extends React.Component {
       newCount: '',
       notification: null,
       showForm: true,
+      activeTable: 1,
       order: 'descending'
     }
   }
@@ -80,6 +81,14 @@ class App extends React.Component {
     })
   }
 
+  changeActive = (active) => {
+    return () => {
+      this.setState({
+        activeTable: active 
+      })
+    }  
+  }
+
   orderSightings = () => {
     let orderedSightings = this.state.sightings
 
@@ -96,7 +105,7 @@ class App extends React.Component {
     return (
       <div>
         <Header />
-        <div className='container'> 
+        <div class='container'> 
           <Notification
             message={this.state.notification}
           />
@@ -113,6 +122,8 @@ class App extends React.Component {
             sightings={orderedSightings}
             order={this.state.order}
             changeOrder={this.changeOrder}
+            active={this.state.activeTable}
+            changeActive={this.changeActive}
           />
         </div>
       </div>

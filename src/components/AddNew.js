@@ -15,9 +15,9 @@ const FieldGroup = ({ id, getValidationState, message, label, ...props }) => {
         <FormControl {...props} />
         <FormControl.Feedback />
         {getValidationState === 'error' ? 
-        <Alert bsStyle='danger'>
-          {message}
-        </Alert> : ''}
+          <Alert bsStyle='danger'>
+            {message}
+          </Alert> : ''}
       </Col>
     </FormGroup>
   )
@@ -34,10 +34,10 @@ const AddNew = ({ visible, hideOrShowForm, handleFormSubmit, newDateTime, newDes
           <FieldGroup
             id='newDateTime'
             getValidationState={validator.validateDateTime(newDateTime)}
-            message='write valid date in format yyyy-mm-dd hh-mm-ss'
+            message='write valid date in format yyyy-mm-dd hh:mm:ss'
             type='text'
             label='date and time'
-            placeholder='yyyy-mm-dd hh-mm-ss'
+            placeholder='yyyy-mm-dd hh:mm:ss'
             value={newDateTime}
             onChange={handleValueChange}
           />   
