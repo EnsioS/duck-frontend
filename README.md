@@ -1,3 +1,28 @@
+# Duck frontend
+Frontend for [Vincit's simple duck backend stub](https://github.com/Vincit/summer-2018/#duck-backend).
+
+Unfortunately, yet missing automated tests
+
+## Requirements
+Requires [Node.js](https://nodejs.org/en/) installed with npm. [Git](https://git-scm.com/) is used for cloning repository.
+
+Tested with Node.js version 8.9.4 and npm v5.6.0.
+
+## Install
+```
+$ git clone https://github.com/EnsioS/duck-frontend.git  
+$ cd duck-frontend  
+$ npm install
+```
+
+## Run
+To start application run
+
+```
+$ npm start
+```
+
+## React Info
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 
 Below you will find some information on how to perform common tasks.<br>
