@@ -1,5 +1,5 @@
 # Duck frontend
-Frontend for [Vincit's simple duck backend stub](https://github.com/Vincit/summer-2018/#duck-backend).
+Frontend for [Vincit's simple duck backend stub](https://github.com/Vincit/summer-2018).
 
 Unfortunately, yet missing automated tests
 
